@@ -1,16 +1,79 @@
 <!DOCTYPE html>
-
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <form action="" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" required="true" placeholder="Name" />
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+      <br />
+      <br />
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+      <label for="email">Email</label>
+      <input type="text" id="email" required="true" placeholder="Email" />
 
-</body>
+      <br />
+      <br/ >
 
+      <label for="gender">Gender</label>
+      <input type="radio" id="gender_m" required="true" name="gender" />
+      <label for="gender">Male</label>
+      <input type="radio" id="gender_f" name="gender" />
+      <label for="gender">Female</label>
+
+      <br />
+      <br />
+
+      <label for="cars">Car Brands</label>
+      <select id="cars" required="true">
+        <option disabled selected hidden>--Please choose an option--</option>
+        <option value="Lamborgini">Lamborgini</option>
+        <option value="Bugati">Bugati</option>
+        <option value="Ferrari">Ferrari</option>
+        <option value="Koenigsegg">Koenigsegg</option>
+      </select>
+
+      <br />
+      <br />
+
+      <label for="age">Age</label>
+      <input type="number" id="age" required="true" placeholder="Age" />
+
+      <br />
+      <br />
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" required="true" id="dob" />
+
+      <br />
+      <br />
+
+      <label for="tel">Phone Number</label>
+      <input type="tel" id="tel" placeholder="xxx-xxx-xxxx" />
+
+      <br />
+      <br />
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        required="true"
+        placeholder="Password"
+      />
+
+      <br />
+      <br />
+
+      <input type="checkbox" id="tos" required="true" />
+      <label for="tod">I agree to the TOS</label>
+
+      <br />
+      <br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
 </html>
